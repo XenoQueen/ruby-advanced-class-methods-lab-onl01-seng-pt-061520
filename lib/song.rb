@@ -28,11 +28,11 @@ class Song
     song
   end
   
-  def self.find_by_name(name)
+  def song.find_by_name(name)
     @@all.find {|song| song.name == name}
   end
   
-  def self.find_or_create_by_name(name)
+  def song.find_or_create_by_name(name)
     if self.find_by_name(name)
       self.find_by_name(name)
     else
@@ -40,11 +40,11 @@ class Song
     end
   end
   
-  def self.alphabetical
+  def song.alphabetical
     @@all.sort_by {|song| song.name}
   end
   
-  def self.new_from_filename(filename)
+  def song.new_from_filename(filename)
     artist_and_song = filename.split(".").first
     artist_and_song = artist_and_song.split(" - ")
     artist = artist_and_song[0]
