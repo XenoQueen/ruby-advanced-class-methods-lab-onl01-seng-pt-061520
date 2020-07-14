@@ -10,19 +10,19 @@ class Song
     self.class.all << self
   end
   
-  def self.create
+  def song.create
     song = Song.new
     song.save
     song
   end
   
-  def self.new_by_name(name)
+  def song.new_by_name(name)
     song = self.new
     song.name = name
     song
   end
   
-  def self.create_by_name(name)
+  def song.create_by_name(name)
     song = self.new_by_name(name)
     song.save
     song
