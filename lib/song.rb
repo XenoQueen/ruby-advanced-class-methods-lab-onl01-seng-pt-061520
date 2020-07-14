@@ -49,5 +49,6 @@ class Song
     artist_and_song = artist_and_song.split(" - ")
     artist = artist_and_song[0]
     song = artist_and_song[1]
-    new_song = 
+    new_song = Song.new
+    
 end
