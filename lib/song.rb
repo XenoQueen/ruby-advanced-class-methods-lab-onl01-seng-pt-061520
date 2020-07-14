@@ -48,5 +48,6 @@ class Song
     artist_and_song = filename.split(".").first
     artist_and_song = artist_and_song.split(" - ")
     artist = artist_and_song[0]
+    song = artist_and_song[1]
     
 end
